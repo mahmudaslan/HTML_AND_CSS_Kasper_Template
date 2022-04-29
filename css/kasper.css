@@ -447,3 +447,102 @@ header nav .form i{
     top: 1px;
 }
 /* End Design */
+/* Start Portfolio */
+.portfolio{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.portfolio .shuffle{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .shuffle li{
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.portfolio .shuffle .active{
+    background-color: var(--mini-color);
+    color: white;
+}
+
+.portfolio .imgs-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.portfolio .imgs-container .box{
+    flex-basis: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px){
+    .portfolio .imgs-container .box{
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1199px){
+    .portfolio .imgs-container .box{
+        flex-basis: 25%;
+    }
+}
+
+.portfolio .imgs-container .box img{
+    max-width: 100%;
+    transition: var(--mini-transition);
+    -webkit-transition: var(--mini-transition);
+    -moz-transition: var(--mini-transition);
+    -ms-transition: var(--mini-transition);
+    -o-transition: var(--mini-transition);
+}
+
+.portfolio .imgs-container .box:hover img{
+    transform: rotate(3deg) scale(1.1);
+    -webkit-transform: rotate(3deg) scale(1.1);
+    -moz-transform: rotate(3deg) scale(1.1);
+    -ms-transform: rotate(3deg) scale(1.1);
+    -o-transform: rotate(3deg) scale(1.1);
+}
+
+.portfolio .imgs-container .box .text{
+    padding: 20px;
+    position: absolute;
+    bottom: -100%;
+    background-color: white;
+    width: 100%;
+    transition: var(--mini-transition);
+    -webkit-transition: var(--mini-transition);
+    -moz-transition: var(--mini-transition);
+    -ms-transition: var(--mini-transition);
+    -o-transition: var(--mini-transition);
+}
+
+.portfolio .imgs-container .box:hover .text{
+    bottom: 0;
+}
+
+.portfolio .imgs-container .box .text h4{
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.portfolio .imgs-container .box .text p{
+    color: var(--mini-color);
+}
+
+.portfolio .more{
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    color: white;
+    background-color: var(--mini-color);
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* End Portfolio */
