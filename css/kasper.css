@@ -885,3 +885,104 @@ margin-bottom: 40px;
     color: var(--mini-color);
 }
 /* End Quote */
+/* Start Pricing */
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap: 30px;
+}
+
+.pricing .plans .plan {
+text-align: center;
+background-color: #fcfcfc;
+}
+
+.pricing .plans .plan .head {
+    padding: 50px;
+    border-top: 1px solid var(--mini-color);
+    border-bottom: 1px solid var(--mini-color);
+}
+
+.pricing .plans .plan .head h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.pricing .plans .plan .head span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .plans .plan .head span::before {
+    content: "$";
+    position: relative;
+    font-size: 25px;
+    font-weight: normal;
+    top: -40px;
+    margin-right: 15px;
+}
+
+.pricing .plans .plan .head span::after {
+    content: "/Mo";
+    position: relative;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.pricing .plans .plan ul {
+    border-bottom: 1px solid var(--mini-color) ;
+}
+
+.pricing .plans .plan ul li {
+    padding: 20px;
+    position: relative;
+}
+
+.pricing .plans .plan ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-color: var(--mini-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.pricing .foot a {
+    display: block;
+    margin: 30px auto;
+    text-decoration: none;
+    width: fit-content;
+    padding: 20px;
+    border: solid 1px var(--mini-color);
+}
+
+.pricing .contact-text {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+
+.pricing .contact-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    margin:  0 auto;
+    padding: 15px 30px;
+    color: white;
+    background-color: var(--mini-color);
+}
+/* End Pricing */
