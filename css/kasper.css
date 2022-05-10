@@ -986,3 +986,92 @@ background-color: #fcfcfc;
     background-color: var(--mini-color);
 }
 /* End Pricing */
+/* Start Subscribe */
+.subscribe {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.subscribe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb( 0 0 0 / 50%);
+}
+
+.subscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+}
+
+.subscribe form {
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+    position: relative;
+}
+
+.subscribe form i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.subscribe form input[type="email"] {
+    background: none;
+    border: solid 1px white;
+    border-right: none;
+    padding: 20px 20px 20px 60px;
+    caret-color: var(--mini-color);
+    width: calc(100% - 130px);
+}
+
+.subscribe form input[type="submit"] {
+    background-color: var(--mini-color);
+    border: solid 1px white;
+    border-left: none;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    width: 130px;
+}
+
+.subscribe form input[type="email"]:focus,
+.subscribe form input[type="submit"]:focus {
+    outline: none;
+}
+
+.subscribe form ::placeholder {
+    color: white;
+}
+
+.subscribe p {
+    line-height: 2;
+    margin-left: 50px;
+}
+
+@media (max-width: 991px) {
+    .subscribe p {
+        margin: 30px 0 0;
+    }
+}
+/* End Subscribe */
